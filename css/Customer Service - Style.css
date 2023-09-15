@@ -1,0 +1,150 @@
+.main-body {
+    max-width: 1700px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+input[type="checkbox"] {
+    accent-color: #7b557d;
+    transform: scale(1.5);
+}
+
+.no {
+    background-color: #e9d7e8;
+    border-radius: 25px;
+}
+
+.no_messages {
+    width: 50%;
+    top: 50%;
+    margin: auto auto;
+    text-align: center;
+    color: #461c4b;
+}
+
+.Messages-Table-div {
+    overflow: auto;
+    height: auto;
+    max-height: 50vh;
+    border: 1px solid #8D728B;
+}
+
+.Messages-Table {
+    position: relative;
+    border-collapse: collapse;
+    border: 1px solid #8D728B;
+    margin-right: 0px;
+}
+
+thead th {
+    border: 1px solid white;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #af93ad;
+    color: white;
+    font-size: 20px;
+}
+
+thead tr:first-child th {
+    border-bottom: 0;
+    border-top: 0;
+}
+
+thead tr th:first-child {
+    border-left: 0;
+}
+
+thead tr th:last-child {
+    border-right: 0;
+}
+
+tbody td {
+    border: 1px solid #8D728B;
+}
+
+.done {
+    width: 80px;
+}
+
+.client_name {
+    width: 200px;
+}
+
+.client_email {
+    width: 350px;
+}
+
+.client_message {
+    width: 1070px;
+    word-break: break-all;
+}
+
+.Messages-Table tr:hover {
+    background-color: #e9d7e8;
+}
+
+.Messages-Table td {
+    text-align: center;
+    height: 35px;
+}
+
+.Messages-Table td a {
+    text-decoration: none;
+    color: black;
+}
+
+.Messages-Table td a:hover {
+    background-color: transparent;
+    color: black;
+    font-size: 14pt;
+    transition: .2s;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*section titles*/
+
+.title {
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    color: #461c4b;
+}
+
+
+/* adds line after titles*/
+
+.title::after {
+    content: '';
+    background: #7b557d;
+    width: 800px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*smooth scrolling effect*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*----------media query for less than 600 screen size-----*/
+
+@media only screen and (max-width: 600px) {
+    .table-images-cell {
+        flex-basis: 100%;
+    }
+}

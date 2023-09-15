@@ -1,0 +1,262 @@
+/*Wadha Mohammed Alhajri 2190004335*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact {
+    top: 100ex;
+    min-height: 100px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.contact .content {
+    top: 100ex;
+    margin-top: 122px;
+    width: 800px;
+    height: 1px;
+    text-align: center;
+    height: 10%;
+}
+
+.contact .content h3 {
+    font-size: 55px;
+    font-weight: 500;
+    color: #461c4b;
+    top: 11px;
+    height: 10%;
+}
+
+.contact .content p {
+    width: 450px;
+    height: 9px;
+    background-color: #461c4b;
+    margin: 40px auto;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin: 1px;
+}
+
+.contantInfo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.contantInfo .box {
+    position: relative;
+    padding: 30px;
+    display: flex;
+    right: 10px;
+}
+
+.contantInfo .box .icon1 {
+    
+    align-self: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 70px;
+    height: 70px;
+    display: flex;
+    background-color: #af93ad;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55%;
+    font-size: 22px;
+    box-shadow: 0 0 10px 7px #e4d9e3;
+}
+
+.contantInfo .box .icon2 {
+    
+    align-self: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 70px;
+    height: 70px;
+    display: flex;
+    background-color: #af93ad;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55%;
+    font-size: 22px;
+    box-shadow: 0 0 10px 7px #e4d9e3;
+}
+
+.contantInfo .box .icon3 {
+    
+    align-self: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 70px;
+    height: 70px;
+    display: flex;
+    background-color: #af93ad;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55%;
+    font-size: 22px;
+    box-shadow: 0 0 10px 7px #e4d9e3;
+}
+
+.contantInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #af93ad;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contantInfo .box .text h3 {
+    font-weight: 500;
+    color: #7b557d;
+}
+
+.contactForm {
+    padding: 40px;
+    background: #af93ad;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 7px #e4d9e3;
+    height: 75%;
+    width: 75%;
+    bottom: 60px;
+}
+
+.contactForm h3 {
+    font-size: 30px;
+    color: #e4d9e3;
+    font-weight: 500px;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #e4d9e3;
+    padding: 20px 40px;
+    outline: none;
+    color: #461c4b;
+    transition: 0.5s;
+    box-shadow: 0 0 10px 2px #e4d9e3;
+}
+
+.contactForm .inputBox input:hover {
+    box-shadow: 0 0 10px 7px #e4d9e3;
+}
+
+.contactForm .inputBox textarea:hover {
+    box-shadow: 0 0 10px 7px #e4d9e3;
+}
+
+.contactForm .inputBox textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contactForm input[type="submit"],
+.contactForm input[type="reset"] {
+    background: #461c4b;
+}
+
+.contactForm input[type="submit"],
+.contactForm input[type="reset"] {
+    float: right;
+    border: 0;
+    background: #461c4b;
+    color: aliceblue;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 1px;
+}
+
+.contactForm input[type="submit"]:hover {
+    background: #e4d9e3;
+    box-shadow: 0 0 10px 4px #e4d9e3;
+}
+
+.contactForm input[type="reset"]:hover {
+    background: #e4d9e3;
+    box-shadow: 0 0 10px 4px #e4d9e3;
+}
+
+.contactFormx {
+    padding: 40px;
+    background: #af93ad;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 7px #e4d9e3;
+    height: 75%;
+    width: 75%;
+    bottom: 60px;
+    margin-top: 304px;
+    margin-bottom: 52px;
+}
+
+.contactFormx h3 {
+    font-size: 25px;
+    color: #e4d9e3;
+    font-weight: 500px;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    text-align: center;
+}
+
+.map {
+    padding: 10px;
+    background: #af93ad;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 7px #e4d9e3;
+    height: 300px;
+    width: 50%;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contentline {
+    width: 800px;
+    height: 1px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+ .contact contentline theline {
+    width: 450px;
+    height: 9px;
+    background-color: #461c4b;
+    margin: 40px auto;
+    border-radius: 20px;
+    cursor: pointer;
+     margin-bottom: 10000px;
+}
+

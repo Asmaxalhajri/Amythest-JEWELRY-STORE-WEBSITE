@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* activate current link*/
+
+a.active {
+    background-color: #af93ad;
+    color: white;
+    transition: .5s;
+}
+
+
+/* Change the background color when hover */
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+    transition: .5s;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/*----------loader------*/
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+/*-------Search-------*/
+
+.table-images-cell-search {
+    background-color: #d9cbd2;
+    border-radius: 5px;
+}
+
+
+.table-search-cell {
+    border-radius: 5px;
+    justify-content: space-between;
+    display: flex;
+    background: #d9cbd2;
+    flex-basis: 10%;
+    padding: 10px;
+    width: 85%;
+    margin: 0 auto;
+    max-height: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+}
+
+
+/* Search Input*/
+
+.table-search-cell .Search-input {
+    width: 85%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #461c4b;
+    outline-color: #461c4b;
+}
+
+
+/* Search Button*/
+
+.search-button {
+    background: #af93ad;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.search-button-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-button:hover .static {
+    display: none;
+}
+
+.move {
+    display: none;
+}
+
+.search-button:hover .move {
+    display: block;
+}
+
+.search-button input[type="button"]{
+    all: unset;
+    border: none;
+    background-color: inherit;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color: #555;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 25px;
+    padding-right: 25px;
+   
+}
+
+
+.search_img {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 25px;
+    padding-right: 25px;
+   
+}
+.col-1 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-1 img {
+    max-width: 100%;
+    padding: 55px 0;
+}
+
+.col-1 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #461c4b;
+}
+
+.btn {
+    display: inline-block;
+    background: #af93ad;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #6d5b65;
+}
+
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+   padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.col-2 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 294px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    
+}
+
+.s img
+{
+   width: 23%; 
+}
+.col-2 img {
+    width: 100%;
+
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #461c4b;
+}
+
+.title::after {
+    content: '';
+    background: #7b557d;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    color: #461c4b;
+    font-weight: normal;
+}
+
+.col-2 p {
+    font-size: 14px;
+}
+
+.rating .fa {
+    color: #7b557d;
+}
+
+.col-2:hover {
+    transform: translateY(-5px);
+}
+ 
+ /*-- Loader-------------->*/
+#preloader{
+    background:#ffffff url(loader.gif) no-repeat center center;
+    background-size:10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/*size of cells in table*/
+
+.table-images-cell {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+
+/*sizing for images inside table*/
+
+.table-images-cell img {
+    width: 250px;
+    height: 300px;
+}
+
+
+/*----------media query for less than 600 scrrn size-----*/
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+
+    .col-1,
+    .col-2 {
+        flex-basis: 100%;
+    }
+}

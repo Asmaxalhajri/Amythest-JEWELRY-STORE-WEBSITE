@@ -1,0 +1,255 @@
+.main-body {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* no products */
+
+.no_products {
+    margin-top: 200px;
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+    color: #461c4b;
+}
+
+.no_products a {
+    color: white;
+    background-color: #af93ad;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.no_products a:hover {
+    background-color: #ddd;
+    color: black;
+    transition: .5s;
+}
+
+
+/* Search */
+
+.table-images-cell-search {
+    background-color: #d9cbd2;
+    border-radius: 5px;
+}
+
+.table-search-cell {
+    border-radius: 5px;
+    justify-content: space-between;
+    display: flex;
+    background: #d9cbd2;
+    flex-basis: 10%;
+    padding: 10px;
+    width: 85%;
+    margin: 0 auto;
+    max-height: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+}
+
+
+/* Search Input*/
+
+.table-search-cell .Search-input {
+    width: 85%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #461c4b;
+    outline-color: #461c4b;
+}
+
+
+/* Search Button*/
+
+.search-button {
+    border: none;
+    background: #af93ad;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.search-button-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-button:hover .static {
+    display: none;
+}
+
+.move {
+    display: none;
+}
+
+.search-button:hover .move {
+    display: block;
+}
+
+
+/*section titles*/
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #461c4b;
+}
+
+
+/* adds line after titles*/
+
+.title::after {
+    content: '';
+    background: #7b557d;
+    width: 400px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    color: #461c4b;
+    font-weight: normal;
+    position: relative;
+    text-align: center;
+}
+
+table td {
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    height: 300px;
+}
+
+tr.row-space>td {
+    padding-top: 9em;
+}
+
+p {
+    text-align: center;
+}
+
+
+/*smooth scrolling effect*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*size of cells in table*/
+
+.table-images-cell {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+
+/*sizing for images inside table*/
+
+.table-images-cell img {
+    border-radius: 5px;
+    width: 250px;
+    height: 300px;
+}
+
+
+/*beginning of overlay over images*/
+
+.image-overlay-container {
+    position: relative;
+    width: 250px;
+    height: 300px;
+}
+
+.image-overlay {
+    opacity: 1;
+    display: block;
+    width: 250px;
+    height: 300px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.image-overlay-position {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image-overlay-buttons {
+    border: none;
+    background-color: #af93ad;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.image-overlay-buttons:hover {
+    background-color: #e4d9e3;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+
+input[type="button"] {
+    all: unset;
+    border: none;
+    background-color: inherit;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image-overlay-container:hover .image-overlay {
+    opacity: 0.3;
+}
+
+.image-overlay-container:hover .image-overlay-position {
+    opacity: 1;
+}
+
+
+/*end of overlay over images*/
+
+
+/*----------media query for less than 600 screen size-----*/
+
+@media only screen and (max-width: 600px) {
+    .table-images-cell {
+        flex-basis: 100%;
+    }
+}
