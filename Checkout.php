@@ -1,4 +1,4 @@
-<!--Teaf Bashamakh-->
+
 <?php
 
  function cartElement($name,$price,$image,$category,$id,$count,$stock,$descrption){
