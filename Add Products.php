@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html >
-<!-- Waad Alsobi 2190003735-->
 <head>
 	<meta charset="utf-8">
    <title>Amethyst | Add Product </title>
