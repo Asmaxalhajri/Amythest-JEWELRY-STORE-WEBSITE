@@ -1,6 +1,6 @@
 
 <html>
-<!--Sahar Saeed Al-Zahrani	2190003270 -->
+
 <head>
     <meta charset="utf-8">
     <title>admin login</title>
